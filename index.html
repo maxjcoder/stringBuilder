@@ -2,9 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>String Builder</title>
 </head>
 <body>
-    
+    <h1 class="main-title" style="padding:">
+        <strong>Tell us who your audience will be.</strong>
+      </h1>
+      
+      <main style="background-color: white; padding: 1rem;">
+      <div class="selections-container" style="background-color: white;">
+        <label class="dropdown-text" for="population-dropdown">Choose a population</label><select class="dropdown" id="population-dropdown" name="people"><option value="">--Please choose an option--</option><option value="Prospects">Prospects</option><option value="Applicants">Applicants</option><option value="Prospects and Applicants">Prospects and Applicants</option></select><label class="dropdown-text" for="term-dropdown">Choose a term:</label><select class="dropdown" id="term-dropdown" name="term"><option value="">--Please choose an option--</option><option value="Spring 2024">Spring 2024</option><option value="Summer 2024">Summer 2024</option><option value="Fall 2024">Fall 2024</option><option value="Spring, Summer and Fall 2024">Spring, Summer and Fall 2024</option><option value="Summer and Fall 2024">Summer and Fall 2024</option><option value="Spring 2025">Spring 2025</option><option value="Summer 2025">Summer 2025</option><option value="Fall 2025">Summer and Fall 2024</option><option value="Spring, Summer and Fall 2025">Spring, Summer and Fall 2025</option><option value="Summer and Fall 2025">Summer and Fall 2025</option></select><label class="dropdown-text" for="staff-dropdown">Choose a staff:</label><select class="dropdown" id="staff-dropdown" name="staff"><option value="">--Please choose an option--</option><option value="Max">Max</option><option value="Tristan">Tristan</option><option value="Katie">Katie</option><option value="Lauren">Lauren</option><option value="Weston">Weston</option></select>
+      </div>
+      <br />
+      <button class="btn" id="generate-populationstatement-btn">Generate Population Statement</button>
+      
+      <p id="populationstatement-text">
+      </p>
+      </main>
+<script src="./javascript/logic.js"></script>
 </body>
 </html>
