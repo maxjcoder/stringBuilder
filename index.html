@@ -13,13 +13,24 @@
 
   <main style="background-color: white; padding: 1rem;">
     <div class="selections-container" style="background-color: white;">
-      <label class="dropdown-text" for="population-dropdown">Choose a population</label><select class="dropdown"
+      <label class="dropdown-text" for="type-dropdown">Choose a type:</label>
+      <select class="dropdown"
+        id="type-dropdown" name="type">
+        <option value="">--Please choose an option--</option>
+        <option value="Undergraduate">Undergraduate</option>
+        <option value="Graduate">Graduate</option>
+        <option value="ESL">ESL</option>
+      </select>
+      <label class="dropdown-text" for="population-dropdown">Choose a population</label>
+      <select class="dropdown"
         id="population-dropdown" name="people">
         <option value="">--Please choose an option--</option>
         <option value="Prospects">Prospects</option>
         <option value="Applicants">Applicants</option>
         <option value="Prospects and Applicants">Prospects and Applicants</option>
-      </select><label class="dropdown-text" for="term-dropdown">Choose a term:</label><select class="dropdown"
+      </select>
+      <label class="dropdown-text" for="term-dropdown">Choose a term:</label>
+      <select class="dropdown"
         id="term-dropdown" name="term">
         <option value="">--Please choose an option--</option>
         <option value="Spring 2024">Spring 2024</option>
@@ -32,7 +43,9 @@
         <option value="Fall 2025">Summer and Fall 2024</option>
         <option value="Spring, Summer and Fall 2025">Spring, Summer and Fall 2025</option>
         <option value="Summer and Fall 2025">Summer and Fall 2025</option>
-      </select><label class="dropdown-text" for="staff-dropdown">Choose a staff:</label><select class="dropdown"
+      </select>
+      <label class="dropdown-text" for="staff-dropdown">Choose a staff:</label>
+      <select class="dropdown"
         id="staff-dropdown" name="staff">
         <option value="">--Please choose an option--</option>
         <option value="Max">Max</option>
