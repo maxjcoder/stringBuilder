@@ -23,11 +23,11 @@ const resetValues = () => {
 };
 
 generatePopulationStatementBtn.addEventListener("click", () => {
-  const popStatementArr = [
+  const madLibsArr = [
     `I'd like to reach ${population} interested in ${term} assigned to ${staff}.`
   ];
 
-  const randomIndex = Math.floor(Math.random() * popStatementArr.length);
+  const randomIndex = Math.floor(Math.random() * madLibsArr.length);
 
   if (
     [population, term, staff].some(
@@ -37,6 +37,6 @@ generatePopulationStatementBtn.addEventListener("click", () => {
     alert("Please choose a selection from each of the dropdowns");
     return;
   }
-  populationStatementResult.innerText = popStatementArr[randomIndex];
+  populationStatementResult.innerText = madLibsArr[randomIndex];
   resetValues();
 });

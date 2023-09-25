@@ -6,43 +6,20 @@
     <title>String Builder</title>
 </head>
 <body>
-    <h1 class="main-title">Tell us who your audience will be.</h1>
-<main>
-  <div class="selections-container">
-    <label class="dropdown-text" for="population-dropdown">Choose a population</label>
-    <select class="dropdown" name="people" id="population-dropdown">
-      <option value="">--Please choose an option--</option>
-      <option value="Prospects">Prospects</option>
-      <option value="Applicants">Applicants</option>
-      <option value="Prospects and Applicants">Prospects and Applicants</option>
-    </select>
-    <label class="dropdown-text" for="term-dropdown">Choose a term:</label>
-    <select class="dropdown" name="term" id="term-dropdown">
-      <option value="">--Please choose an option--</option>
-      <option value="Spring 2024">Spring 2024</option>
-      <option value="Summer 2024">Summer 2024</option>
-      <option value="Fall 2024">Fall 2024</option>
-      <option value="Spring, Summer and Fall 2024">Spring, Summer and Fall 2024</option>
-      <option value="Summer and Fall 2024">Summer and Fall 2024</option>
-      <option value="Spring 2025">Spring 2025</option>
-      <option value="Summer 2025">Summer 2025</option>
-      <option value="Fall 2025">Summer and Fall 2024</option>
-      <option value="Spring, Summer and Fall 2025">Spring, Summer and Fall 2025</option>
-      <option value="Summer and Fall 2025">Summer and Fall 2025</option>
-    </select>
-    <label class="dropdown-text" for="staff-dropdown">Choose a staff:</label>
-    <select class="dropdown" name="staff" id="staff-dropdown">
-      <option value="">--Please choose an option--</option>
-      <option value="Max">Max</option>
-      <option value="Tristan">Tristan</option>
-      <option value="Katie">Katie</option>
-      <option value="Lauren">Lauren</option>
-      <option value="Weston">Weston</option>
-    </select>
-  </div>
-  <button class="btn" id="generate-populationstatement-btn">Generate Mad Lib</button>
-  <p id="populationstatement-text"></p>
-</main>
+    <h5 class="main-title" style="padding: .5rem;">
+        <strong>Tell us who your audience will be.</strong>
+      </h5>
+      
+      <main style="background-color: white; padding: 1rem;">
+      <div class="selections-container" style="background-color: white;">
+        <label class="dropdown-text" for="population-dropdown">Choose a population</label><select class="dropdown" id="population-dropdown" name="people"><option value="">--Please choose an option--</option><option value="Prospects">Prospects</option><option value="Applicants">Applicants</option><option value="Prospects and Applicants">Prospects and Applicants</option></select><label class="dropdown-text" for="term-dropdown">Choose a term:</label><select class="dropdown" id="term-dropdown" name="term"><option value="">--Please choose an option--</option><option value="Spring 2024">Spring 2024</option><option value="Summer 2024">Summer 2024</option><option value="Fall 2024">Fall 2024</option><option value="Spring, Summer and Fall 2024">Spring, Summer and Fall 2024</option><option value="Summer and Fall 2024">Summer and Fall 2024</option><option value="Spring 2025">Spring 2025</option><option value="Summer 2025">Summer 2025</option><option value="Fall 2025">Summer and Fall 2024</option><option value="Spring, Summer and Fall 2025">Spring, Summer and Fall 2025</option><option value="Summer and Fall 2025">Summer and Fall 2025</option></select><label class="dropdown-text" for="staff-dropdown">Choose a staff:</label><select class="dropdown" id="staff-dropdown" name="staff"><option value="">--Please choose an option--</option><option value="Max">Max</option><option value="Tristan">Tristan</option><option value="Katie">Katie</option><option value="Lauren">Lauren</option><option value="Weston">Weston</option></select>
+      </div>
+      <br />
+      <button class="btn" id="generate-populationstatement-btn">Generate Population Statement</button>
+      
+      <p id="populationstatement-text">
+      </p>
+      </main>
 <script type="javascript">
     
 </script>
